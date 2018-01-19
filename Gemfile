@@ -38,10 +38,12 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rspec-rails'
+  gem 'debbie'
+  gem 'binding_of_caller'
 end
 group :test do
   gem 'database_cleaner'
   gem 'launchy'
 end
 
-gem 'open-weather'
+gem 'open-weather', git: 'git@github.com:IslamAzab/ruby_open_weather_map.git', ref: '6b8078e692f'
