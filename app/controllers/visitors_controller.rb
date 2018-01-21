@@ -7,8 +7,6 @@ class VisitorsController < ApplicationController
 
   def city
     city = params[:city_name]
-    p params
-    p city
     weather_data city
     render :index
   end
