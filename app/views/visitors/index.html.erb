@@ -3,3 +3,10 @@
 Welcome to the Weather Map Challenge!
 
 <div><%= raw @response %></div>
+
+<div>
+  <%= form_tag('/') do -%>
+    <div><%= text_field_tag :city_name %></div>
+    <div><%= submit_tag :submit %></div>
+  <% end -%>
+</div>
