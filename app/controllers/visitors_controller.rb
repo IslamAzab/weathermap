@@ -9,4 +9,17 @@ class VisitorsController < ApplicationController
       @response = Nokogiri::HTML(weather).css('body')
     end
   end
+
+  def city
+    city = params[:city_name]
+    p params
+    p city
+    weather = OpenWeather::Current.city(city, OPEN_WEATHER_OPTIONS)
+    if weather["cod"]
+      @response = "#{city} is not found!"
+    else
+      @response = Nokogiri::HTML(weather).css('body')
+    end
+    render :index
+  end
 end
