@@ -46,4 +46,4 @@ group :test do
   gem 'launchy'
 end
 
-gem 'open-weather', git: 'git@github.com:IslamAzab/ruby_open_weather_map.git', ref: '6b8078e692f'
+gem 'open-weather', git: 'git://github.com/IslamAzab/ruby_open_weather_map.git', ref: '6b8078e692f'
