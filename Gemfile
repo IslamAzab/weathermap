@@ -45,5 +45,8 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
 end
+group :production do
+  gem 'pg'
+end
 
 gem 'open-weather', git: 'git://github.com/IslamAzab/ruby_open_weather_map.git', ref: '6b8078e692f'
