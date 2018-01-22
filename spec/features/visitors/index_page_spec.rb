@@ -32,4 +32,17 @@ feature 'Index page' do
     expect(page).to have_content 'Wind'
     expect(page).to have_content 'Pressure'
   end
+
+  # Scenario: Visit the index page
+  #   Given I am a visitor
+  #   When I search the index page for a invalid city
+  #   Then I see 'not found' my invalid city
+  scenario 'search in the index page for a valid city' do
+    visit '/'
+
+    fill_in :city_name, with: 'Invalid City'
+    click_button :submit
+
+    expect(page).to have_content 'Invalid City is not found!'
+  end
 end
