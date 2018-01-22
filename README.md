@@ -13,21 +13,5 @@ This application requires:
 
 Getting Started
 ---------------
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
-
-Contributing
-------------
-
-Credits
--------
-
-License
--------
+- Clone the app
+- run `rails s`
