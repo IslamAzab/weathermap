@@ -27,7 +27,7 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'jquery-rails'
-gem 'mysql2', '~> 0.3.18'
+gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 group :development do
   gem 'better_errors'
   gem 'html2haml'
