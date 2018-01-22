@@ -1,12 +1,20 @@
-<h3>Welcome</h3>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">WeatherMap</a>
 
-Welcome to the Weather Map Challenge!
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <%= form_tag('/', class: 'form-inline my-2 my-lg-0') do -%>
+      <div><%= text_field_tag :city_name, "", {placeholder: :search_city, class: 'form-control mr-sm-2'} %></div>
+      <div><%= submit_tag :submit, class: 'btn btn-outline-success my-2 my-sm-0' %></div>
+    <% end -%>
+  </div>
+</nav>
 
-<div><%= raw @response %></div>
+<div class='container'>
+  <h3>Welcome</h3>
 
-<div>
-  <%= form_tag('/') do -%>
-    <div><%= text_field_tag :city_name %></div>
-    <div><%= submit_tag :submit %></div>
-  <% end -%>
+  Welcome to the Weather Map Challenge!
+
+  <div><%= raw @response %></div>
 </div>
