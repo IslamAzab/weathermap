@@ -27,7 +27,7 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'jquery-rails'
-gem 'pg'
+gem 'pg', '~> 1.0'
 group :development do
   gem 'better_errors'
   gem 'html2haml'
@@ -44,9 +44,6 @@ end
 group :test do
   gem 'database_cleaner'
   gem 'launchy'
-end
-group :production do
-  gem 'pg'
 end
 
 gem 'open-weather', git: 'git://github.com/IslamAzab/ruby_open_weather_map.git', ref: '6b8078e692f'

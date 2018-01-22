@@ -298,7 +298,7 @@ DEPENDENCIES
   launchy
   listen (>= 3.0.5, < 3.2)
   open-weather!
-  pg
+  pg (~> 1.0)
   puma (~> 3.7)
   rails (~> 5.1.4)
   rails_layout
